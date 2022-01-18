@@ -1,13 +1,14 @@
 import React from "react";
 import { Color } from "../BaseColor";
+import "../Css/footer.css";
 
 import { Col, Container, Row } from "react-bootstrap";
 const Footer = () => {
   const { primaryColor, fontColor } = Color;
   return (
     <div style={{ backgroundColor: primaryColor }}>
-      <Row className="d-flex p-2 justify-content-between">
-        <Col className="text-align-center" col={3}>
+      <Row className="d-flex p-3 justify-content-between">
+        <Col className="text-align-center" id="footer-nav" col={3}>
           <h3>Navigation</h3>
           <ul className="list-unstyled">
             <li>Homes</li>
@@ -47,6 +48,11 @@ const Footer = () => {
             loading="lazy"
           ></iframe>
         </Col>
+      </Row>
+      <Row>
+        <footer className="d-flex justify-content-center align-items-center">
+          Copyright @2022 | Designed by WeCreation
+        </footer>
       </Row>
     </div>
   );
