@@ -3,20 +3,33 @@ import { Color } from "../BaseColor";
 import "../Css/footer.css";
 
 import { Col, Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 const Footer = () => {
-  const { primaryColor, fontColor } = Color;
+  const { primaryColor } = Color;
   return (
-    <div style={{ backgroundColor: primaryColor }}>
+    <section style={{ backgroundColor: primaryColor, width: "100%" }}>
       <Row className="d-flex p-3 justify-content-between">
-        <Col className="text-align-center" id="footer-nav" col={3}>
-          <h3>Navigation</h3>
+        <Col className="text-align-center footer-nav" col={3}>
+          <h3>Quick links</h3>
           <ul className="list-unstyled">
-            <li>Homes</li>
-            <li>Delivery</li>
-            <li>Drink</li>
+            <li>
+              <Link to="/" className="text-decoration-none text-black">
+                Homes
+              </Link>
+            </li>
+            <li>
+              <Link to="/delivery" className="text-decoration-none text-black">
+                delivery
+              </Link>
+            </li>
+            <li>
+              <Link to="/product" className="text-decoration-none text-black">
+                Delivery
+              </Link>
+            </li>
           </ul>
         </Col>
-        <Col className="text-align-center" col={3}>
+        <Col className="text-align-center footer-nav" col={3}>
           <h3>Contact Us</h3>
           <ul className="list-unstyled">
             <li>
@@ -54,7 +67,7 @@ const Footer = () => {
           Copyright @2022 | Designed by WeCreation
         </footer>
       </Row>
-    </div>
+    </section>
   );
 };
 

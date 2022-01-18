@@ -5,11 +5,11 @@ import PopularItems from "./PopularItems";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <PopularItems />
       <Delivery />
       <Footer />
-    </div>
+    </>
   );
 };
 
