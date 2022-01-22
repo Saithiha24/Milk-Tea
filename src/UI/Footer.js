@@ -7,7 +7,10 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   const { primaryColor } = Color;
   return (
-    <section style={{ backgroundColor: primaryColor, width: "100%" }}>
+    <section
+      style={{ backgroundColor: primaryColor, width: "100%" }}
+      id="footer"
+    >
       <Row className="d-flex p-3 justify-content-between">
         <Col className="text-align-center footer-nav" col={3}>
           <h3>Quick links</h3>
@@ -38,6 +41,10 @@ const Footer = () => {
             </li>
             <li>
               <i className="fab fa-weixin"></i>
+              <span className="ms-1">-09 253 204 166</span>
+            </li>
+            <li>
+              <i className="fab fa-viber"></i>
               <span className="ms-1">-09 253 204 166</span>
             </li>
             <li>

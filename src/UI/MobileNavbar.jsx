@@ -1,31 +1,57 @@
-import React from 'react'
-import {Navbar, Container, Nav} from 'react-bootstrap'
-import "../Css/navbar.css";
+import React from "react";
+import { Link } from "react-router-dom";
+import { Color } from "../BaseColor";
+
+
 const MobileNavbar = () => {
-    return (
-    <Navbar id="mobile-navbar" bg="dark" variant="dark" style={{'padding':'0'}}>
-     <Container style={{"color":"red",'padding':'0 1rem'}}>
-        <Nav className=" w-100 d-flex justify-content-between align-items-centre">
+  const { primaryColor } = Color;
+  return (
+   
+      <div className=" d-md-none" id="mobile-navbar"
+      style={{ width: "100%", background: primaryColor,zIndex:1 }}>
+        <ul className="list-unstyled d-flex justify-content-between align-items-center px-3">
+          <li>
+            <Link
+              to="/"
+              style={{color:"gray"}}
+              className="list-unstyled d-flex flex-column
+                      justify-content-center 
+                      align-items-center
+                      text-decoration-none"
+            >
+            <i className="fas fa-store"></i>
+              <p>Home</p>
+            </Link>
+          </li>
+          <li>
+            <Link
+              style={{color:"gray"}}
+              to="/products"
+              className="list-unstyled d-flex flex-column
+                      justify-content-center 
+                      align-items-center
+                      text-decoration-none text-grey"
+            >
+        <i className="fas fa-wine-glass-alt"></i>
+              <p>Home</p>
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/delivery"
+              style={{color:"gray"}}
+              className="list-unstyled d-flex flex-column
+                      justify-content-center 
+                      align-items-center
+                      text-decoration-none text-grey"
+            >
+              <i className="fas fa-shopping-cart"></i>
+              <p>Home</p>
+            </Link>
+          </li>
+        </ul>
+      </div>
+  );
+};
 
-        <Nav.Link href="#home" style={{"text-decoration":"center"}}>
-         <i className="fas fa-home"></i>
-         <p className="nav">Home</p> 
-        </Nav.Link>
-
-        <Nav.Link href="#features">
-         <i className="fas fa-wine-bottle"></i>
-         <p>Drinks</p> 
-        </Nav.Link>
-
-        <Nav.Link href="#pricing">
-         <i className="fas fa-bicycle"></i>
-         <p>Delivery</p> 
-        </Nav.Link>
-
-        </Nav>
-    </Container>
-    </Navbar> 
-    )
-}
-
-export default MobileNavbar
+export default MobileNavbar;
