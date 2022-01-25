@@ -1,25 +1,25 @@
 export const milkTea = [
   {
-    price: "1500ks",
+    price: "2000ks",
     name: "Bubble MilkTea",
     pic: "",
     id: "1",
   },
   {
-    price: "1500ks",
+    price: "2000ks",
     name: "Thia MilkTEa",
     pic: "",
     id: "2",
   },
   {
-    price: "1500ks",
+    price: "2000ks",
     name: "Thia Wan MilkTea",
     pic: "",
     id: "3",
   },
 
   {
-    price: "1500ks",
+    price: "2000ks",
     name: "Thia Green MilkTea",
     pic: "",
     id: "4",
@@ -28,20 +28,20 @@ export const milkTea = [
 
 export const milkShake = [
   {
-    price: "1500ks",
+    price: "2000ks",
     name: "Chocolate Milkshake",
     pic: "",
     id: "1",
   },
 
   {
-    price: "1500ks",
+    price: "2000ks",
     name: "Taro Milkshake",
     pic: "",
     id: "2",
   },
   {
-    price: "1500ks",
+    price: "2000ks",
     name: "Stawberry Milkshake",
     pic: "",
     id: "1",
@@ -50,7 +50,7 @@ export const milkShake = [
 
 export const Juice = [
   {
-    price: "1000ks",
+    price: "100ks",
     name: "Mongo",
     pic: "",
     id: "1",
