@@ -6,6 +6,7 @@ import Home from "./component/Home/Home";
 import Product from "./component/Product/Product";
 import DeskNavbar from "./UI/DeskNavbar";
 import MobileNavbar from "./UI/MobileNavbar";
+import ScrollButton from "./UI/ScrollToTop";
 const App = () => {
   return (
     <Router>
@@ -15,6 +16,7 @@ const App = () => {
         <Route exact path="/delivery" element={<Delivery />} />
         <Route exact path="/products" element={<Product />} />
       </Routes>
+      <ScrollButton/>
       <MobileNavbar/>
     </Router>
   );
